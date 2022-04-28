@@ -125,6 +125,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
+    backgroundColor: "black"
   },
   top_container: {
 

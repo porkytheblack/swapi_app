@@ -2,12 +2,9 @@ import { Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { global_styles } from '../../../GlobalStyles'
 import { Fontisto } from '@expo/vector-icons';
-import Header1 from '../../Headers/Header1';
-import { white } from 'react-native-paper/lib/typescript/styles/colors';
 import Text1 from '../../Text/Text1';
 import { useQuery } from 'react-query';
 import axios from 'axios';
-import Navigation from '../../../navigation';
 
 const ListElement = ({name, _url, gender, species, nav}:{name?: string, gender?: string, species?: string[] , nav: any, _url?: string}) => {
     const url = species instanceof Array && species.length > 0 ? species[0] : "https://swapi.dev/api/species/1/"

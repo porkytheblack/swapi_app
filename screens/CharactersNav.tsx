@@ -1,15 +1,7 @@
 import { StyleSheet } from 'react-native';
 import React from "react"
-import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
-import TopSearchBar from "../components/SearchComponent/index"
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { global_styles } from '../GlobalStyles';
-import Header1 from '../components/Headers/Header1';
-import List1 from '../components/Lists/List1';
 import { createStackNavigator } from '@react-navigation/stack';
-import CharacterScreen from './CharacterScreens/Character';
 import CharactersScreen from './Characters';
 import CharacterNav from './CharacterScreens';
 import { QueryClient, QueryClientProvider } from 'react-query';

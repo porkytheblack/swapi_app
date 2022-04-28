@@ -32,9 +32,6 @@ const List1 = ({start_index, nav}:{start_index: number, nav: any}) => {
         set_next_url(current)
         set_pages_counted(pages_counted-1)
     }
-
-
-    const [unique_species, set_unique_species] = useState<string[]>([])
     const {isLoading, isError, data} = useQuery(`fetch_people${pages_counted}`, ()=>{
         return axios.get(current_url).then((res)=>res.data)
     })
